@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>how to create FAQ page</title>
+        <link rel="stylesheet" href="FAQ.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h1>General Question</h1>
+        <div class="container">
+        <div class="sub-container">
+            <div class="first">
+        <p class="question">How  many vowels are there in the English alphate and anme them?</p><button class="button">+</button>
+        <p class="answer">5 vowels namely a,e,i,o,u</p>
+        </div>
+        <div class="second">
+        <p class="question">Which animals is Known as the King of the jungle?</p><button class="button">+</button>
+        <p class="answer">The lion is known as the KIng of the Jungle</p>
+        </div>
+        <div class="third">
+        <p class="question">Name the National bird of india?</p><button class="button">+</button>
+        <p class="answer">The Peacock</p>
+        </div>
+        <div class="fourth">
+        <p class="question">Name the National animal of india?</p><button class="button">+</button>
+        <p class="answer">Tiger</p>
+        </div>
+        </div>
+        </div>
+        <script>
+        let answers = document.getElementsByClassName("answer");
+        let buttons = document.getElementsByClassName("button");
+        
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener('click', () => {
+            if (answers[i].style.display === "none") {
+                answers[i].style.display = "block";
+            } else {
+              answers[i].style.display = "none";
+            }
+          });
+        }
+        </script>
+    </body>
+</html>
+
